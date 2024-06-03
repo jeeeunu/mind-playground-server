@@ -16,8 +16,12 @@ export class UserRepository {
     return this.userRepository.createMany({ data });
   }
 
-  async update(id: number, data: Prisma.UserUpdateInput) {
+  async update(id: number, data: Prisma.UserUncheckedUpdateInput) {
     return this.userRepository.update({ where: { id }, data });
+  }
+
+  async findFirstByNickname(nickname: string) {
+    return this.userRepository.findFirst({ where: { nickname } });
   }
 
   async updateMany(data: Prisma.UserUncheckedUpdateManyInput[]) {

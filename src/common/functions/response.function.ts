@@ -1,4 +1,4 @@
-import { IResult } from '../interfaces/result.interface';
+import { IResult } from '../interfaces/response.interface';
 
 export const getResponse = (message: string, data: any): IResult => {
   return { resultCode: 200, message, data };

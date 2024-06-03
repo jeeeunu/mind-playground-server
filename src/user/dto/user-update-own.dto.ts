@@ -3,37 +3,36 @@ import {
   IsDate,
   IsIn,
   IsInt,
-  IsNotEmpty,
   IsOptional,
   IsString,
 } from 'class-validator';
 import { prismaEnum } from '../../common/functions/prisma-enum.function';
 import { $Enums } from '@prisma/client';
 
-export class UserCreateDto {
-  @IsNotEmpty()
+export class UserUpdateOwnDto {
+  @IsOptional()
   @IsString()
-  nickname: string;
+  nickname?: string;
 
-  @IsNotEmpty()
+  @IsOptional()
   @IsDate()
-  birth: Date;
+  birth?: Date;
 
-  @IsNotEmpty()
+  @IsOptional()
   @IsIn(prismaEnum($Enums.UserGender, []))
-  gender: $Enums.UserGender;
+  gender?: $Enums.UserGender;
 
   @IsOptional()
   @IsString()
-  snsUrl: string;
+  snsUrl?: string;
 
   @IsOptional()
   @IsString()
   profileImageUrl?: string;
 
-  @IsNotEmpty()
+  @IsOptional()
   @IsInt()
-  jobId: number;
+  jobId?: number;
 
   /** 한국 지역 (시)*/
   @IsOptional()
@@ -45,9 +44,9 @@ export class UserCreateDto {
   @IsInt()
   koreaResidenceDistrictId?: number;
 
-  @IsNotEmpty()
+  @IsOptional()
   @IsBoolean()
-  isAlarmSettings: boolean;
+  isAlarmSettings?: boolean;
 
   /** 운영체제 */
   @IsOptional()

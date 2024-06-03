@@ -10,8 +10,26 @@ import { Prisma } from '@prisma/client';
 export class UserService {
   constructor(private userRepository: UserRepository) {}
 
-  async create() {
+  async duplicateNicknameCheck(nickname: string) {
+    const nicknameDuplicateCheck =
+      await this.userRepository.findFirstByNickname(nickname);
+
+    if (nicknameDuplicateCheck)
+      return getResponse('이미 사용중인 닉네임입니다.', {});
+
+    return getResponse('사용 가능한 닉네임입니다.', {});
+  }
+
+  async create(data: Prisma.UserUncheckedCreateInput) {
+    await this.userRepository.create(data);
+
     return createResponse('회원가입 및 로그인 성공', {});
+  }
+
+  async updateOwn(accountId: number, data: Prisma.UserUncheckedUpdateInput) {
+    await this.userRepository.update(accountId, data);
+
+    return createResponse('회원정보 수정 성공', {});
   }
 
   async updateAppInfo(id: number, data: Prisma.UserUpdateInput) {
@@ -28,5 +46,11 @@ export class UserService {
         userDeviceToken: data.userDeviceToken,
       });
     }
+  }
+
+  async deleteOwn(accountId: number) {
+    await this.userRepository.delete(accountId);
+
+    return createResponse('회원탈퇴 성공', {});
   }
 }

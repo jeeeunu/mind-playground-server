@@ -1,0 +1,1254 @@
+[
+    {
+        "value": "종로구",
+        "code": 110,
+        "koreaCityId": 1
+    },
+    {
+        "value": "중구",
+        "code": 140,
+        "koreaCityId": 1
+    },
+    {
+        "value": "용산구",
+        "code": 170,
+        "koreaCityId": 1
+    },
+    {
+        "value": "성동구",
+        "code": 200,
+        "koreaCityId": 1
+    },
+    {
+        "value": "광진구",
+        "code": 215,
+        "koreaCityId": 1
+    },
+    {
+        "value": "동대문구",
+        "code": 230,
+        "koreaCityId": 1
+    },
+    {
+        "value": "중랑구",
+        "code": 260,
+        "koreaCityId": 1
+    },
+    {
+        "value": "성북구",
+        "code": 290,
+        "koreaCityId": 1
+    },
+    {
+        "value": "강북구",
+        "code": 305,
+        "koreaCityId": 1
+    },
+    {
+        "value": "도봉구",
+        "code": 320,
+        "koreaCityId": 1
+    },
+    {
+        "value": "노원구",
+        "code": 350,
+        "koreaCityId": 1
+    },
+    {
+        "value": "은평구",
+        "code": 380,
+        "koreaCityId": 1
+    },
+    {
+        "value": "서대문구",
+        "code": 410,
+        "koreaCityId": 1
+    },
+    {
+        "value": "마포구",
+        "code": 440,
+        "koreaCityId": 1
+    },
+    {
+        "value": "양천구",
+        "code": 470,
+        "koreaCityId": 1
+    },
+    {
+        "value": "강서구",
+        "code": 500,
+        "koreaCityId": 1
+    },
+    {
+        "value": "구로구",
+        "code": 530,
+        "koreaCityId": 1
+    },
+    {
+        "value": "금천구",
+        "code": 545,
+        "koreaCityId": 1
+    },
+    {
+        "value": "영등포구",
+        "code": 560,
+        "koreaCityId": 1
+    },
+    {
+        "value": "동작구",
+        "code": 590,
+        "koreaCityId": 1
+    },
+    {
+        "value": "관악구",
+        "code": 620,
+        "koreaCityId": 1
+    },
+    {
+        "value": "서초구",
+        "code": 650,
+        "koreaCityId": 1
+    },
+    {
+        "value": "강남구",
+        "code": 680,
+        "koreaCityId": 1
+    },
+    {
+        "value": "송파구",
+        "code": 710,
+        "koreaCityId": 1
+    },
+    {
+        "value": "강동구",
+        "code": 740,
+        "koreaCityId": 1
+    },
+    {
+        "value": "중구",
+        "code": 110,
+        "koreaCityId": 2
+    },
+    {
+        "value": "서구",
+        "code": 140,
+        "koreaCityId": 2
+    },
+    {
+        "value": "동구",
+        "code": 170,
+        "koreaCityId": 2
+    },
+    {
+        "value": "영도구",
+        "code": 200,
+        "koreaCityId": 2
+    },
+    {
+        "value": "부산진구",
+        "code": 230,
+        "koreaCityId": 2
+    },
+    {
+        "value": "동래구",
+        "code": 260,
+        "koreaCityId": 2
+    },
+    {
+        "value": "남구",
+        "code": 290,
+        "koreaCityId": 2
+    },
+    {
+        "value": "북구",
+        "code": 320,
+        "koreaCityId": 2
+    },
+    {
+        "value": "해운대구",
+        "code": 350,
+        "koreaCityId": 2
+    },
+    {
+        "value": "사하구",
+        "code": 380,
+        "koreaCityId": 2
+    },
+    {
+        "value": "금정구",
+        "code": 410,
+        "koreaCityId": 2
+    },
+    {
+        "value": "강서구",
+        "code": 440,
+        "koreaCityId": 2
+    },
+    {
+        "value": "연제구",
+        "code": 470,
+        "koreaCityId": 2
+    },
+    {
+        "value": "수영구",
+        "code": 500,
+        "koreaCityId": 2
+    },
+    {
+        "value": "사상구",
+        "code": 530,
+        "koreaCityId": 2
+    },
+    {
+        "value": "기장군",
+        "code": 710,
+        "koreaCityId": 2
+    },
+    {
+        "value": "중구",
+        "code": 110,
+        "koreaCityId": 3
+    },
+    {
+        "value": "동구",
+        "code": 140,
+        "koreaCityId": 3
+    },
+    {
+        "value": "서구",
+        "code": 170,
+        "koreaCityId": 3
+    },
+    {
+        "value": "남구",
+        "code": 200,
+        "koreaCityId": 3
+    },
+    {
+        "value": "북구",
+        "code": 230,
+        "koreaCityId": 3
+    },
+    {
+        "value": "수성구",
+        "code": 260,
+        "koreaCityId": 3
+    },
+    {
+        "value": "달서구",
+        "code": 290,
+        "koreaCityId": 3
+    },
+    {
+        "value": "달성군",
+        "code": 710,
+        "koreaCityId": 3
+    },
+    {
+        "value": "중구",
+        "code": 110,
+        "koreaCityId": 4
+    },
+    {
+        "value": "동구",
+        "code": 140,
+        "koreaCityId": 4
+    },
+    {
+        "value": "미추홀구",
+        "code": 177,
+        "koreaCityId": 4
+    },
+    {
+        "value": "연수구",
+        "code": 185,
+        "koreaCityId": 4
+    },
+    {
+        "value": "남동구",
+        "code": 200,
+        "koreaCityId": 4
+    },
+    {
+        "value": "부평구",
+        "code": 237,
+        "koreaCityId": 4
+    },
+    {
+        "value": "계양구",
+        "code": 245,
+        "koreaCityId": 4
+    },
+    {
+        "value": "서구",
+        "code": 260,
+        "koreaCityId": 4
+    },
+    {
+        "value": "강화군",
+        "code": 710,
+        "koreaCityId": 4
+    },
+    {
+        "value": "옹진군",
+        "code": 720,
+        "koreaCityId": 4
+    },
+
+    {
+        "value": "동구",
+        "code": 110,
+        "koreaCityId": 5
+    },
+    {
+        "value": "서구",
+        "code": 140,
+        "koreaCityId": 5
+    },
+    {
+        "value": "남구",
+        "code": 155,
+        "koreaCityId": 5
+    },
+    {
+        "value": "북구",
+        "code": 170,
+        "koreaCityId": 5
+    },
+    {
+        "value": "광산구",
+        "code": 200,
+        "koreaCityId": 5
+    },
+    {
+        "value": "동구",
+        "code": 110,
+        "koreaCityId": 6
+    },
+    {
+        "value": "중구",
+        "code": 140,
+        "koreaCityId": 6
+    },
+    {
+        "value": "서구",
+        "code": 170,
+        "koreaCityId": 6
+    },
+    {
+        "value": "유성구",
+        "code": 200,
+        "koreaCityId": 6
+    },
+    {
+        "value": "대덕구",
+        "code": 230,
+        "koreaCityId": 6
+    },
+    {
+        "value": "중구",
+        "code": 110,
+        "koreaCityId": 7
+    },
+    {
+        "value": "남구",
+        "code": 140,
+        "koreaCityId": 7
+    },
+    {
+        "value": "동구",
+        "code": 170,
+        "koreaCityId": 7
+    },
+    {
+        "value": "북구",
+        "code": 200,
+        "koreaCityId": 7
+    },
+    {
+        "value": "울주군",
+        "code": 710,
+        "koreaCityId": 7
+    },
+    {
+        "value": "세종특별자치시",
+        "code": 110,
+        "koreaCityId": 8
+    },
+    {
+        "value": "수원시 장안구",
+        "code": 111,
+        "koreaCityId": 9
+    },
+    {
+        "value": "수원시 권선구",
+        "code": 113,
+        "koreaCityId": 9
+    },
+    {
+        "value": "수원시 팔달구",
+        "code": 115,
+        "koreaCityId": 9
+    },
+    {
+        "value": "수원시 영통구",
+        "code": 117,
+        "koreaCityId": 9
+    },
+    {
+        "value": "성남시 수정구",
+        "code": 131,
+        "koreaCityId": 9
+    },
+    {
+        "value": "성남시 중원구",
+        "code": 133,
+        "koreaCityId": 9
+    },
+    {
+        "value": "성남시 분당구",
+        "code": 135,
+        "koreaCityId": 9
+    },
+    {
+        "value": "의정부시",
+        "code": 150,
+        "koreaCityId": 9
+    },
+    {
+        "value": "안양시 만안구",
+        "code": 171,
+        "koreaCityId": 9
+    },
+    {
+        "value": "안양시 동안구",
+        "code": 173,
+        "koreaCityId": 9
+    },
+    {
+        "value": "부천시",
+        "code": 190,
+        "koreaCityId": 9
+    },
+    {
+        "value": "광명시",
+        "code": 210,
+        "koreaCityId": 9
+    },
+    {
+        "value": "평택시",
+        "code": 220,
+        "koreaCityId": 9
+    },
+    {
+        "value": "동두천시",
+        "code": 250,
+        "koreaCityId": 9
+    },
+    {
+        "value": "안산시 상록구",
+        "code": 271,
+        "koreaCityId": 9
+    },
+    {
+        "value": "안산시 단원구",
+        "code": 273,
+        "koreaCityId": 9
+    },
+    {
+        "value": "고양시 덕양구",
+        "code": 281,
+        "koreaCityId": 9
+    },
+    {
+        "value": "고양시 일산동구",
+        "code": 285,
+        "koreaCityId": 9
+    },
+    {
+        "value": "고양시 일산서구",
+        "code": 287,
+        "koreaCityId": 9
+    },
+    {
+        "value": "과천시",
+        "code": 290,
+        "koreaCityId": 9
+    },
+    {
+        "value": "구리시",
+        "code": 310,
+        "koreaCityId": 9
+    },
+    {
+        "value": "남양주시",
+        "code": 360,
+        "koreaCityId": 9
+    },
+    {
+        "value": "오산시",
+        "code": 370,
+        "koreaCityId": 9
+    },
+    {
+        "value": "시흥시",
+        "code": 390,
+        "koreaCityId": 9
+    },
+    {
+        "value": "군포시",
+        "code": 410,
+        "koreaCityId": 9
+    },
+    {
+        "value": "의왕시",
+        "code": 430,
+        "koreaCityId": 9
+    },
+    {
+        "value": "하남시",
+        "code": 450,
+        "koreaCityId": 9
+    },
+    {
+        "value": "용인시 처인구",
+        "code": 461,
+        "koreaCityId": 9
+    },
+    {
+        "value": "용인시 기흥구",
+        "code": 463,
+        "koreaCityId": 9
+    },
+    {
+        "value": "용인시 수지구",
+        "code": 465,
+        "koreaCityId": 9
+    },
+    {
+        "value": "파주시",
+        "code": 480,
+        "koreaCityId": 9
+    },
+    {
+        "value": "이천시",
+        "code": 500,
+        "koreaCityId": 9
+    },
+    {
+        "value": "안성시",
+        "code": 550,
+        "koreaCityId": 9
+    },
+    {
+        "value": "김포시",
+        "code": 570,
+        "koreaCityId": 9
+    },
+    {
+        "value": "화성시",
+        "code": 590,
+        "koreaCityId": 9
+    },
+    {
+        "value": "광주시",
+        "code": 610,
+        "koreaCityId": 9
+    },
+    {
+        "value": "양주시",
+        "code": 630,
+        "koreaCityId": 9
+    },
+    {
+        "value": "포천시",
+        "code": 650,
+        "koreaCityId": 9
+    },
+    {
+        "value": "여주시",
+        "code": 670,
+        "koreaCityId": 9
+    },
+    {
+        "value": "연천군",
+        "code": 800,
+        "koreaCityId": 9
+    },
+    {
+        "value": "가평군",
+        "code": 820,
+        "koreaCityId": 9
+    },
+    {
+        "value": "양평군",
+        "code": 830,
+        "koreaCityId": 9
+    },
+    {
+        "value": "춘천시",
+        "code": 110,
+        "koreaCityId": 10
+    },
+    {
+        "value": "원주시",
+        "code": 130,
+        "koreaCityId": 10
+    },
+    {
+        "value": "강릉시",
+        "code": 150,
+        "koreaCityId": 10
+    },
+    {
+        "value": "동해시",
+        "code": 170,
+        "koreaCityId": 10
+    },
+    {
+        "value": "태백시",
+        "code": 190,
+        "koreaCityId": 10
+    },
+    {
+        "value": "속초시",
+        "code": 210,
+        "koreaCityId": 10
+    },
+    {
+        "value": "삼척시",
+        "code": 230,
+        "koreaCityId": 10
+    },
+    {
+        "value": "홍천군",
+        "code": 720,
+        "koreaCityId": 10
+    },
+    {
+        "value": "횡성군",
+        "code": 730,
+        "koreaCityId": 10
+    },
+    {
+        "value": "영월군",
+        "code": 750,
+        "koreaCityId": 10
+    },
+    {
+        "value": "평창군",
+        "code": 760,
+        "koreaCityId": 10
+    },
+    {
+        "value": "정선군",
+        "code": 770,
+        "koreaCityId": 10
+    },
+    {
+        "value": "철원군",
+        "code": 780,
+        "koreaCityId": 10
+    },
+    {
+        "value": "화천군",
+        "code": 790,
+        "koreaCityId": 10
+    },
+    {
+        "value": "양구군",
+        "code": 800,
+        "koreaCityId": 10
+    },
+    {
+        "value": "인제군",
+        "code": 810,
+        "koreaCityId": 10
+    },
+    {
+        "value": "고성군",
+        "code": 820,
+        "koreaCityId": 10
+    },
+    {
+        "value": "양양군",
+        "code": 830,
+        "koreaCityId": 10
+    },
+    {
+        "value": "청주시 상당구",
+        "code": 111,
+        "koreaCityId": 11
+    },
+    {
+        "value": "청주시 서원구",
+        "code": 112,
+        "koreaCityId": 11
+    },
+    {
+        "value": "청주시 흥덕구",
+        "code": 113,
+        "koreaCityId": 11
+    },
+    {
+        "value": "청주시 청원구",
+        "code": 114,
+        "koreaCityId": 11
+    },
+    {
+        "value": "충주시",
+        "code": 130,
+        "koreaCityId": 11
+    },
+    {
+        "value": "제천시",
+        "code": 150,
+        "koreaCityId": 11
+    },
+    {
+        "value": "보은군",
+        "code": 720,
+        "koreaCityId": 11
+    },
+    {
+        "value": "옥천군",
+        "code": 730,
+        "koreaCityId": 11
+    },
+    {
+        "value": "영동군",
+        "code": 740,
+        "koreaCityId": 11
+    },
+    {
+        "value": "증평군",
+        "code": 745,
+        "koreaCityId": 11
+    },
+    {
+        "value": "진천군",
+        "code": 750,
+        "koreaCityId": 11
+    },
+    {
+        "value": "괴산군",
+        "code": 760,
+        "koreaCityId": 11
+    },
+    {
+        "value": "음성군",
+        "code": 770,
+        "koreaCityId": 11
+    },
+    {
+        "value": "단양군",
+        "code": 800,
+        "koreaCityId": 11
+    },
+    {
+        "value": "천안시 동남구",
+        "code": 131,
+        "koreaCityId": 12
+    },
+    {
+        "value": "천안시 서북구",
+        "code": 133,
+        "koreaCityId": 12
+    },
+    {
+        "value": "공주시",
+        "code": 150,
+        "koreaCityId": 12
+    },
+    {
+        "value": "보령시",
+        "code": 180,
+        "koreaCityId": 12
+    },
+    {
+        "value": "아산시",
+        "code": 200,
+        "koreaCityId": 12
+    },
+    {
+        "value": "서산시",
+        "code": 210,
+        "koreaCityId": 12
+    },
+    {
+        "value": "논산시",
+        "code": 230,
+        "koreaCityId": 12
+    },
+    {
+        "value": "계룡시",
+        "code": 250,
+        "koreaCityId": 12
+    },
+    {
+        "value": "당진시",
+        "code": 270,
+        "koreaCityId": 12
+    },
+    {
+        "value": "금산군",
+        "code": 710,
+        "koreaCityId": 12
+    },
+    {
+        "value": "부여군",
+        "code": 760,
+        "koreaCityId": 12
+    },
+    {
+        "value": "서천군",
+        "code": 770,
+        "koreaCityId": 12
+    },
+    {
+        "value": "청양군",
+        "code": 790,
+        "koreaCityId": 12
+    },
+    {
+        "value": "홍성군",
+        "code": 800,
+        "koreaCityId": 12
+    },
+    {
+        "value": "예산군",
+        "code": 810,
+        "koreaCityId": 12
+    },
+    {
+        "value": "태안군",
+        "code": 825,
+        "koreaCityId": 12
+    },
+    {
+        "value": "전주시 완산구",
+        "code": 111,
+        "koreaCityId": 13
+    },
+    {
+        "value": "전주시 덕진구",
+        "code": 113,
+        "koreaCityId": 13
+    },
+    {
+        "value": "군산시",
+        "code": 130,
+        "koreaCityId": 13
+    },
+    {
+        "value": "익산시",
+        "code": 140,
+        "koreaCityId": 13
+    },
+    {
+        "value": "정읍시",
+        "code": 180,
+        "koreaCityId": 13
+    },
+    {
+        "value": "남원시",
+        "code": 190,
+        "koreaCityId": 13
+    },
+    {
+        "value": "김제시",
+        "code": 210,
+        "koreaCityId": 13
+    },
+    {
+        "value": "완주군",
+        "code": 710,
+        "koreaCityId": 13
+    },
+    {
+        "value": "진안군",
+        "code": 720,
+        "koreaCityId": 13
+    },
+    {
+        "value": "무주군",
+        "code": 730,
+        "koreaCityId": 13
+    },
+    {
+        "value": "장수군",
+        "code": 740,
+        "koreaCityId": 13
+    },
+    {
+        "value": "임실군",
+        "code": 750,
+        "koreaCityId": 13
+    },
+    {
+        "value": "순창군",
+        "code": 770,
+        "koreaCityId": 13
+    },
+    {
+        "value": "고창군",
+        "code": 790,
+        "koreaCityId": 13
+    },
+    {
+        "value": "부안군",
+        "code": 800,
+        "koreaCityId": 13
+    },
+
+    {
+        "value": "목포시",
+        "code": 110,
+        "koreaCityId": 14
+    },
+    {
+        "value": "여수시",
+        "code": 130,
+        "koreaCityId": 14
+    },
+    {
+        "value": "순천시",
+        "code": 150,
+        "koreaCityId": 14
+    },
+    {
+        "value": "나주시",
+        "code": 170,
+        "koreaCityId": 14
+    },
+    {
+        "value": "광양시",
+        "code": 230,
+        "koreaCityId": 14
+    },
+    {
+        "value": "담양군",
+        "code": 710,
+        "koreaCityId": 14
+    },
+    {
+        "value": "곡성군",
+        "code": 720,
+        "koreaCityId": 14
+    },
+    {
+        "value": "구례군",
+        "code": 730,
+        "koreaCityId": 14
+    },
+    {
+        "value": "고흥군",
+        "code": 770,
+        "koreaCityId": 14
+    },
+    {
+        "value": "보성군",
+        "code": 780,
+        "koreaCityId": 14
+    },
+    {
+        "value": "화순군",
+        "code": 790,
+        "koreaCityId": 14
+    },
+    {
+        "value": "장흥군",
+        "code": 800,
+        "koreaCityId": 14
+    },
+    {
+        "value": "강진군",
+        "code": 810,
+        "koreaCityId": 14
+    },
+    {
+        "value": "해남군",
+        "code": 820,
+        "koreaCityId": 14
+    },
+    {
+        "value": "영암군",
+        "code": 830,
+        "koreaCityId": 14
+    },
+    {
+        "value": "무안군",
+        "code": 840,
+        "koreaCityId": 14
+    },
+    {
+        "value": "함평군",
+        "code": 860,
+        "koreaCityId": 14
+    },
+    {
+        "value": "영광군",
+        "code": 870,
+        "koreaCityId": 14
+    },
+    {
+        "value": "장성군",
+        "code": 880,
+        "koreaCityId": 14
+    },
+    {
+        "value": "완도군",
+        "code": 890,
+        "koreaCityId": 14
+    },
+    {
+        "value": "진도군",
+        "code": 900,
+        "koreaCityId": 14
+    },
+    {
+        "value": "신안군",
+        "code": 910,
+        "koreaCityId": 14
+    },
+    {
+        "value": "포항시 남구",
+        "code": 111,
+        "koreaCityId": 15
+    },
+    {
+        "value": "포항시 북구",
+        "code": 113,
+        "koreaCityId": 15
+    },
+    {
+        "value": "경주시",
+        "code": 130,
+        "koreaCityId": 15
+    },
+    {
+        "value": "김천시",
+        "code": 150,
+        "koreaCityId": 15
+    },
+    {
+        "value": "안동시",
+        "code": 170,
+        "koreaCityId": 15
+    },
+    {
+        "value": "구미시",
+        "code": 190,
+        "koreaCityId": 15
+    },
+    {
+        "value": "영주시",
+        "code": 210,
+        "koreaCityId": 15
+    },
+    {
+        "value": "영천시",
+        "code": 230,
+        "koreaCityId": 15
+    },
+    {
+        "value": "상주시",
+        "code": 250,
+        "koreaCityId": 15
+    },
+    {
+        "value": "문경시",
+        "code": 280,
+        "koreaCityId": 15
+    },
+    {
+        "value": "경산시",
+        "code": 290,
+        "koreaCityId": 15
+    },
+    {
+        "value": "군위군",
+        "code": 720,
+        "koreaCityId": 15
+    },
+    {
+        "value": "의성군",
+        "code": 730,
+        "koreaCityId": 15
+    },
+    {
+        "value": "청송군",
+        "code": 750,
+        "koreaCityId": 15
+    },
+    {
+        "value": "영양군",
+        "code": 760,
+        "koreaCityId": 15
+    },
+    {
+        "value": "영덕군",
+        "code": 770,
+        "koreaCityId": 15
+    },
+    {
+        "value": "청도군",
+        "code": 820,
+        "koreaCityId": 15
+    },
+    {
+        "value": "고령군",
+        "code": 830,
+        "koreaCityId": 15
+    },
+    {
+        "value": "성주군",
+        "code": 840,
+        "koreaCityId": 15
+    },
+    {
+        "value": "칠곡군",
+        "code": 850,
+        "koreaCityId": 15
+    },
+    {
+        "value": "예천군",
+        "code": 900,
+        "koreaCityId": 15
+    },
+    {
+        "value": "봉화군",
+        "code": 920,
+        "koreaCityId": 15
+    },
+    {
+        "value": "울진군",
+        "code": 930,
+        "koreaCityId": 15
+    },
+    {
+        "value": "울릉군",
+        "code": 940,
+        "koreaCityId": 15
+    },
+    {
+        "value": "창원시 의창구",
+        "code": 121,
+        "koreaCityId": 16
+    },
+    {
+        "value": "창원시 성산구",
+        "code": 123,
+        "koreaCityId": 16
+    },
+    {
+        "value": "창원시 마산합포구",
+        "code": 125,
+        "koreaCityId": 16
+    },
+    {
+        "value": "창원시 마산회원구",
+        "code": 127,
+        "koreaCityId": 16
+    },
+    {
+        "value": "창원시 진해구",
+        "code": 129,
+        "koreaCityId": 16
+    },
+    {
+        "value": "진주시",
+        "code": 170,
+        "koreaCityId": 16
+    },
+    {
+        "value": "통영시",
+        "code": 220,
+        "koreaCityId": 16
+    },
+    {
+        "value": "사천시",
+        "code": 240,
+        "koreaCityId": 16
+    },
+    {
+        "value": "김해시",
+        "code": 250,
+        "koreaCityId": 16
+    },
+    {
+        "value": "밀양시",
+        "code": 270,
+        "koreaCityId": 16
+    },
+    {
+        "value": "거제시",
+        "code": 310,
+        "koreaCityId": 16
+    },
+    {
+        "value": "양산시",
+        "code": 330,
+        "koreaCityId": 16
+    },
+    {
+        "value": "의령군",
+        "code": 720,
+        "koreaCityId": 16
+    },
+    {
+        "value": "함안군",
+        "code": 730,
+        "koreaCityId": 16
+    },
+    {
+        "value": "창녕군",
+        "code": 740,
+        "koreaCityId": 16
+    },
+    {
+        "value": "고성군",
+        "code": 820,
+        "koreaCityId": 16
+    },
+    {
+        "value": "남해군",
+        "code": 840,
+        "koreaCityId": 16
+    },
+    {
+        "value": "하동군",
+        "code": 850,
+        "koreaCityId": 16
+    },
+    {
+        "value": "산청군",
+        "code": 860,
+        "koreaCityId": 16
+    },
+    {
+        "value": "함양군",
+        "code": 870,
+        "koreaCityId": 16
+    },
+    {
+        "value": "거창군",
+        "code": 880,
+        "koreaCityId": 16
+    },
+    {
+        "value": "합천군",
+        "code": 890,
+        "koreaCityId": 16
+    },
+    {
+        "value": "제주시",
+        "code": 110,
+        "koreaCityId": 17
+    },
+    {
+        "value": "서귀포시",
+        "code": 130,
+        "koreaCityId": 17
+    }
+]

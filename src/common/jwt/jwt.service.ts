@@ -2,6 +2,7 @@ import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { decode, sign, verify } from 'jsonwebtoken';
 import { jwtUsage } from './interfaces/jwt.type';
+import { JwtVerifyUnauthorizedException } from '../utils/exceptions/unauthorized.exception';
 
 @Injectable()
 export class JwtService {
@@ -30,9 +31,7 @@ export class JwtService {
         )!,
       ) as T;
     } catch (error) {
-      throw new UnauthorizedException(
-        '로그인이 만료되었거나 잘못된 요청입니다.',
-      );
+      throw new JwtVerifyUnauthorizedException();
     }
   }
 
