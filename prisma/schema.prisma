@@ -1,0 +1,196 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ENUM-USER
+enum UserRole {
+  USER // 유저
+  GUEST // 게스트
+}
+
+enum UserAuthType {
+  DEFAULT // 일반 로그인
+  KAKAO // 카카오 로그인
+  GOOGLE // 구글 로그인
+  NAVER // 네이버 로그인
+  APPLE // 애플 로그인
+}
+
+enum UserState {
+  ENABLED
+  DISABLED
+}
+
+enum UserGender {
+  MALE // 남자
+  FEMALE // 여자
+  OTHER // 기타
+}
+
+// ENUM-POST
+enum PostState {
+  ENABLED
+  DISABLED
+}
+
+enum PostType {
+  NOTICE
+  FAQ
+}
+
+enum PostCategory {
+  DEFAULT
+}
+
+enum PostCommentState {
+  ENABLED
+  DISABLED
+}
+
+// ENUM-SERVICE
+enum MBTI {
+  ISTJ
+  ISFJ
+  INFJ
+  INTJ
+  ISTP
+  ISFP
+  INFP
+  INTP
+  ESTP
+  ESFP
+  ENFP
+  ENTP
+  ESTJ
+  ESFJ
+  ENFJ
+  ENTJ
+}
+
+// ENUM-ETC
+enum OSType {
+  IOS // IOS
+  ANDROID // ANDROID
+  WEB // WEB
+}
+
+// 앱 버전
+model AppVersion {
+  id        Int      @id @default(autoincrement()) // 앱 버전 아이디
+  os        OSType // 운영체제
+  version   String   @db.VarChar() // 앱 버전
+  type      Int // 앱 타입 1: 강제 업데이트 | 2: 일반 업데이트 | 3: 선택 업데이트
+  createdAt DateTime @default(now()) @map("created_at") @db.Timestamp(3) // 생성일
+}
+
+// ADMIN
+model Admin {
+  id              Int           @id @default(autoincrement()) // Admin 아이디
+  loginId         String        @db.VarChar // 로그인 아이디
+  password        String        @db.VarChar // 비밀번호
+  nickname        String        @db.VarChar // 닉네임
+  profileImageUrl String?       @map("profile_image_url") @db.VarChar // 프로필 이미지 url
+  posts           Post[] // 게시물
+  postComments    PostComment[] // 게시물 PostComment
+}
+
+// USER
+model User {
+  id               Int           @id @default(autoincrement()) // 아이디
+  type             UserAuthType  @default(GOOGLE) // 로그인 타입
+  role             UserRole      @default(USER) // 유저 권한
+  state            UserState     @default(ENABLED) // 상태
+  oAuthId          String?       @map("o_auth_id") @db.VarChar() // 소셜 아이디
+  email            String        @unique // 로그인 이메일
+  socailId         String?       @map("social_id") // 소셜 로그인 아이디
+  profileImageUrl  String?       @map("profile_image_url") // 프로필 이미지 url
+  nickname         String? // 닉네임
+  gender           UserGender    @default(OTHER) // 성별
+  mbti             MBTI? // MBTI
+  isAlarmSettings  Boolean?      @map("is_alarm_settings") // 알람 수신 여부
+  os               OSType?       @default(WEB) // 운영체제
+  hardwareVersion  String?       @map("hardware_version") @db.VarChar() // 하드웨어 버전 (App 필수)
+  softwareVersion  String?       @map("software_version") @db.VarChar() // 소프트웨어 버전 (App 필수)
+  userDeviceToken  String?       @map("user_device_token") @db.VarChar() // 유저 기기 토큰 (App 필수)
+  createdAt        DateTime      @default(now()) @map("created_at") @db.Timestamp(3) // 생성일
+  updatedAt        DateTime      @default(now()) @updatedAt @map("updated_at") @db.Timestamp(3) // 수정일
+  blockedHistories UserBlocked[] // 정지 기록 목록
+  tokens           UserToken[] // 사용중인 액세스 토큰 목록
+  posts            Post[] // 작성한 게시글
+  postLikes        Post[]        @relation("_Join:PostUserLikes") // Post 좋아요
+  postComments     PostComment[]
+}
+
+// UserToken
+model UserToken {
+  id           Int      @id @default(autoincrement()) // 유저 토큰 아이디
+  accessToken  String   @map("access_token") // 액세스 토큰
+  isExpiration Boolean  @default(false) @map("is_expiration") // 수동 만료 여부
+  ip           String   @db.VarChar() // 아이피
+  createdAt    DateTime @default(now()) @map("created_at") @db.Timestamp(3) // 생성일
+  user         User     @relation(fields: [userId], references: [id]) // 유저
+  userId       Int      @map("user_id") // 유저 아이디
+}
+
+// UserBlocked
+model UserBlocked {
+  id        Int       @id @default(autoincrement()) // 유저 정지 기록 아이디
+  reason    String    @db.VarChar // 정지 사유
+  expiredAt DateTime  @map("expired_at") @db.Timestamp(3) // 만료일
+  createdAt DateTime  @default(now()) @map("created_at") @db.Timestamp(3) // 생성일
+  updatedAt DateTime  @default(now()) @updatedAt @map("updated_at") @db.Timestamp(3) // 수정일
+  deletedAt DateTime? @map("deleted_at") @db.Timestamp(3) // 삭제일
+  user      User      @relation(fields: [userId], references: [id]) // 유저 관계
+  userId    Int       @map("user_id") // 유저 아이디
+}
+
+// POST
+model Post {
+  id           Int           @id @default(autoincrement()) // Post 아이디
+  isTop        Boolean       @default(false) @map("is_top") // Post 상단 고정 여부
+  isSecret     Boolean       @default(false) @map("is_secret") // Post 비밀글 여부 (작성자와 Admin만 볼 수 있음
+  isComment    Boolean       @default(false) @map("is_comment") // Post PostComment 여부
+  viewCount    Int           @default(0) @map("view_count") // Post 조회수
+  likeCount    Int           @default(0) @map("like_count") // Post 좋아요 수
+  postType     PostType // Post 타입
+  state        PostState     @default(ENABLED) // Post 상태 여부
+  title        String        @db.VarChar() // Post 제목
+  thumbnail    String?       @db.VarChar() // Post 썸네일 이미지 url
+  content      String // Post 내용
+  images       String[]      @db.VarChar() // Post 이미지 url
+  createdAt    DateTime      @default(now()) @map("created_at") @db.Timestamp(3) // Post 생성일
+  updatedAt    DateTime      @default(now()) @updatedAt @map("updated_at") @db.Timestamp(3) // Post 수정일
+  admin        Admin?        @relation(fields: [adminId], references: [id]) // Post Admin 정보
+  adminId      Int?          @map("admin_id") // Post Admin 아이디
+  postComments PostComment[] // Post PostComment
+  postCategory PostCategory  @default(DEFAULT) // Post 카테고리
+  user         User?         @relation(fields: [userId], references: [id]) // Post 작성자(유저) 정보
+  userId       Int?          @map("user_id") // Post 작성자(유저) 아이디
+  userLikes    User[]        @relation("_Join:PostUserLikes") // Post 좋아요
+}
+
+// PostComment
+model PostComment {
+  id        Int              @id @default(autoincrement()) // PostComment 아이디
+  content   String           @db.VarChar() // PostComment 내용
+  state     PostCommentState @default(ENABLED) // PostComment 상태 여부
+  createdAt DateTime         @default(now()) @map("created_at") @db.Timestamp(3) // PostComment 생성일
+  updatedAt DateTime         @default(now()) @updatedAt @map("updated_at") @db.Timestamp(3) // PostComment 수정일
+  user      User?            @relation(fields: [userId], references: [id]) // PostComment 작성자(유저) 정보
+  userId    Int?             @map("user_id") // PostComment 작성자 아이디
+  admin     Admin?           @relation(fields: [adminId], references: [id]) // PostComment Admin 정보
+  adminId   Int?             @map("admin_id") // PostComment Admin 아이디
+  post      Post             @relation(fields: [postId], references: [id]) // PostComment Post
+  postId    Int              @map("post_id") // PostComment Post 아이디
+}

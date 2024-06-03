@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@util/*": [
+        "./src/_common/_utils/*"
+      ],
+      "@factories/*": [
+        "./src/_common/_utils/loggers/*"
+      ],
+      "@decorator/*": [
+        "./src/_common/_utils/decorators/*"
+      ],
+      "@dto/*": [
+        "./src/_common/_utils/dto/*"
+      ],
+      "@exception/*": [
+        "./src/_common/_utils/exceptions/*"
+      ],
+      "@function/*": [
+        "./src/_common/_utils/functions/*"
+      ],
+      "@guard/*": [
+        "./src/_common/_utils/guard/*"
+      ],
+      "@interceptor/*": [
+        "./src/_common/_utils/interceptors/*"
+      ],
+      "@interface/*": [
+        "./src/_common/_utils/interfaces/*"
+      ],
+      "@middleware/*": [
+        "./src/_common/_utils/middlewares/*"
+      ],
+      "@model/*": [
+        "./src/_common/_utils/models/*"
+      ],
+      "@type/*": [
+        "./src/_common/_utils/types/*"
+      ],
+      "@common/*": [
+        "./src/_common/*"
+      ]
+    },
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+  }
+}
